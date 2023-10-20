@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  background-color: black;
+}
+
 ::-moz-selection {
   color: #000;
   background: #99f6e4;
@@ -16,4 +20,8 @@
   -webkit-text-stroke: 1px;
   color: rgb(177, 177, 177);
   -webkit-font-smoothing: antialiased;
+}
+
+.heading {
+  line-height: 100%;
 }

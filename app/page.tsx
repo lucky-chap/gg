@@ -1,58 +1,39 @@
 "use client";
 
-import Image from "next/image";
-import Wrapper from "@/components/wrapper";
-import { Button } from "@/components/ui/button";
-
-import robot from "@/public/images/robot.png";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <section className="flex flex-col lg:flex-row">
-      <section className="flex h-screen w-full flex-col justify-between p-9 lg:h-auto">
-        <Wrapper>
-          <div className="mx-auto flex max-w-sm flex-col justify-between">
-            <span
-              className={`-mt-14 inline-block text-[64px] font-bold text-black dark:text-white`}
-            >
-              01
-            </span>
-            <p className="pb-6 font-medium">
-              Kami (short for Kaminari) is a modern Next.js, Tailwind CSS and
-              shadcn-ui boilerplate that includes all you need to build amazing
-              projects. No need to spend time on configuring the basic needs of
-              a project. I did that for you - Created by{" "}
-              <a
-                href="https://obedd.vercel.app"
-                target="_blank"
-                rel="noreferrer"
-                className="pb-1 text-zinc-800 dark:text-zinc-100 underline font-medium"
-              >
-                Virgil.
-              </a>{" "}
-            </p>
+    <section className="p-5">
+      <div className="mt-32">
+        <h1 className="text-8xl font-bold tracking-wider text-transparent sm:mt-6 lg:leading-[0.8]">
+          <span className="bg-[#99f6e4] text-black leading-[1.25]">
+            Hey there! I'm Virgil, a frontend developr & mystic.
+          </span>
+          <span className="bg-[#99f6e4] text-black leading-[1.25] hidden">
+            One line of code at a time.
+          </span>
+        </h1>
+      </div>
+      {/* <div className="mt-20">
+        <h1 className="text-8xl font-bold tracking-wider bg-clip-text bg-gradient-to-r text-transparent from-pink-500 via-rose-500 to-rose-600 sm:mt-6 lg:leading-[0.8]">
+          <span className="leading-[1.25]">
+            Hi, I'm a frontend developer dedicated to creating user-centric web
+            experiences.
+          </span>
+          <span className="leading-[1.25] hidden">
+            One line of code at a time.
+          </span>
+        </h1>
+      </div> */}
 
-            <div className="">
-              <Button size="xl" className="w-full font-bold" variant="brand">
-                <a
-                  href="https://github.com/lucky-chap/kaminari"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="pb-1 dark:text-zinc-800 text-zinc-100"
-                >
-                  Repo
-                </a>{" "}
-              </Button>
-            </div>
-          </div>
-        </Wrapper>
-      </section>
-
-      {/* second half */}
-
-      <section className="hidden lg:flex h-screen w-full flex-col justify-center items-center bg-[#d6ebe9] p-9">
-        <Image src={robot} alt="Man sitting in wheelchair" />
-      </section>
+      <div className="mt-16">
+        <p className="text-4xl text-secondary italic leading-normal font-normal">
+          I'm Obed, a Ghana based fullstack developer specialising in creating
+          beautiful and performant products with great experiences for mobile
+          and web-based applications with a focus on simplicity & usability.
+        </p>
+      </div>
     </section>
   );
 }
