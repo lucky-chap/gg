@@ -1,39 +1,70 @@
 "use client";
 
-import Link from "next/link";
+import Image from "next/image";
+import React from "react";
+import { Upload, Bell, Copy, Projector } from "lucide-react";
+
+import demo from "@/public/images/demo.png";
+import Button from "@/components/ui/button";
+import Experience from "@/components/experience";
+import Projects from "@/components/projects";
 
 export default function Home() {
   return (
-    <section className="p-5">
-      <div className="mt-32">
-        <h1 className="text-8xl font-bold tracking-wider text-transparent sm:mt-6 lg:leading-[0.8]">
-          <span className="bg-[#99f6e4] text-black leading-[1.25]">
-            Hey there! I'm Virgil, a frontend developr & mystic.
-          </span>
-          <span className="bg-[#99f6e4] text-black leading-[1.25] hidden">
-            One line of code at a time.
-          </span>
-        </h1>
-      </div>
-      {/* <div className="mt-20">
-        <h1 className="text-8xl font-bold tracking-wider bg-clip-text bg-gradient-to-r text-transparent from-pink-500 via-rose-500 to-rose-600 sm:mt-6 lg:leading-[0.8]">
-          <span className="leading-[1.25]">
-            Hi, I'm a frontend developer dedicated to creating user-centric web
-            experiences.
-          </span>
-          <span className="leading-[1.25] hidden">
-            One line of code at a time.
-          </span>
-        </h1>
-      </div> */}
+    <div className="flex flex-col py-14">
+      <section className="flex flex-col items-center">
+        <Image
+          src={demo}
+          alt="User"
+          width={55}
+          height={55}
+          className="rounded-full pb-2"
+        />
 
-      <div className="mt-16">
-        <p className="text-4xl text-secondary italic leading-normal font-normal">
-          I'm Obed, a Ghana based fullstack developer specialising in creating
-          beautiful and performant products with great experiences for mobile
-          and web-based applications with a focus on simplicity & usability.
+        <h2 className="text-2xl text-secondary pb-2">Obed Danquah</h2>
+        <p className="pb-2">Est. 1999 · Auckland, NZ · he/him</p>
+        <p className="max-w-xl text-center pb-2">
+          Obed Danquah is a budding mystic, frontend web developer and
+          science-lover based in Ghana.
         </p>
-      </div>
-    </section>
+        <div className="flex items-center max-w-sm w-full justify-between">
+          <Button>
+            <Upload className="opacity-60" size={18} />
+          </Button>
+          <div className="mx-2"></div>
+          <Button>
+            <div className="flex items-center px-10 font-medium">
+              <p className="text-[#676767]">hunchodotdev@gmail.com</p>
+              <Copy className="opacity-60 ml-2" strokeWidth={2.3} size={18} />
+            </div>
+          </Button>
+          <div className="mx-2"></div>
+          <Button>
+            <Bell className="opacity-60" size={18} />
+          </Button>
+        </div>
+      </section>
+
+      {/* About */}
+      <section className="grid grid-cols-10 mt-24">
+        <p className="span-2">About</p>
+        <div className="col-start-3 col-span-full text-zinc-500 font-normal">
+          <p className="pb-4">
+            With over 2 years of experience in the field, I take pride in
+            delivering visually stunning and user-centric products that exceed
+            client expectations.
+          </p>
+          <p className="pb-4">
+            Whether it's collaborating with cross-functional teams or leading
+            projects, my attention to detail and dedication to excellence has
+            earned me a reputation for delivering exceptional results.
+          </p>
+        </div>
+      </section>
+
+      <Experience />
+
+      <Projects />
+    </div>
   );
 }

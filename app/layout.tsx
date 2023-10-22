@@ -1,40 +1,55 @@
-import Header from "@/components/ui/header";
+import { Provider } from "@/components/provider";
 import "./globals.css";
 import type { Metadata } from "next";
 
 import localFont from "next/font/local";
 
-const TTFirsNeue = localFont({
+const inter = localFont({
   src: [
     {
-      path: "../public/fonts/TTFirsNeue/TTFirsNeue-Light.woff2",
+      path: "../public/fonts/Inter-Thin.ttf",
+      weight: "100",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/Inter-ExtraLight.ttf",
+      weight: "200",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/Inter-Light.ttf",
       weight: "300",
-      style: "light",
+      style: "normal",
     },
     {
-      path: "../public/fonts/TTFirsNeue/TTFirsNeue-Regular.woff2",
+      path: "../public/fonts/Inter-Regular.ttf",
       weight: "400",
-      style: "regular",
+      style: "normal",
     },
     {
-      path: "../public/fonts/TTFirsNeue/TTFirsNeue-Medium.woff2",
+      path: "../public/fonts/Inter-Medium.ttf",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/Inter-SemiBold.ttf",
       weight: "600",
-      style: "medium",
+      style: "normal",
     },
     {
-      path: "../public/fonts/TTFirsNeue/TTFirsNeue-DemiBold.woff2",
+      path: "../public/fonts/Inter-Bold.ttf",
       weight: "700",
-      style: "semibold",
+      style: "normal",
     },
     {
-      path: "../public/fonts/TTFirsNeue/TTFirsNeue-Bold.woff2",
+      path: "../public/fonts/Inter-ExtraBold.ttf",
       weight: "800",
-      style: "bold",
+      style: "normal",
     },
     {
-      path: "../public/fonts/TTFirsNeue/TTFirsNeue-Black.woff2",
+      path: "../public/fonts/Inter-Black.ttf",
       weight: "900",
-      style: "black",
+      style: "normal",
     },
   ],
 });
@@ -96,15 +111,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${TTFirsNeue.className}`}>
-        {/* <Provider attribute="class" defaultTheme="system" enableSystem> */}
-        <main
-          className={`bg-black font-bold text-lg text-primary min-h-screen mx-auto max-w-7xl`}
-        >
-          <Header />
-          {children}
-        </main>
-        {/* </Provider> */}
+      <body className={`${inter.className}`}>
+        <Provider attribute="class" defaultTheme="light" enableSystem>
+          <main className="bg-[#fafafa] text-primary">
+            <section className="min-h-screen mx-auto max-w-3xl">
+              {children}
+            </section>
+          </main>
+        </Provider>
       </body>
     </html>
   );
