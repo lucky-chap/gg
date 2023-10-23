@@ -18,7 +18,7 @@ export default function Experience() {
           </p>
           <p className="pb-4">
             Created a unique and custom design that perfectly represented the
-            couple's and their foundation's vision and values.
+            couple&apos;s and their foundation&apos;s vision and values.
           </p>
         </div>
         {/* exp2 */}

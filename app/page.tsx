@@ -133,9 +133,10 @@ export default function Home() {
             client expectations.
           </p>
           <p className="pb-4">
-            Whether it's collaborating with cross-functional teams or leading
-            projects, my attention to detail and dedication to excellence has
-            earned me a reputation for delivering exceptional results.
+            Whether it&apos;s collaborating with cross-functional teams or
+            leading projects, my attention to detail and dedication to
+            excellence has earned me a reputation for delivering exceptional
+            results.
           </p>
         </div>
       </section>
