@@ -51,7 +51,7 @@ export default function Home() {
 
         {/* twitter and phone */}
         <div className="flex flex-col sm:flex-row sm:items-center font-medium my-2">
-          <div className="flex items-center">
+          <div className="sm:hidden flex items-center">
             <Twitter className="opacity-60" size={19} strokeWidth={2.1} />
             <p className="text-[#676767] pl-2">
               <a
