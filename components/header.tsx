@@ -22,11 +22,11 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed left-10 w-full z-30 md:bg-opacity-90 pt-7 transition-all duration-300 ease-linear ${
+      className={`fixed w-full z-30 md:bg-opacity-90 pt-7 transition-all duration-300 ease-linear ${
         !top ? "visible opacity-100" : "invisible opacity-0"
       }`}
     >
-      <section className="w-full mx-auto max-w-2xl bg-white cursor-default transition-all duration-150 ease-linear border border-zinc-100 p-2 rounded-xl shadow-sm text-secondary">
+      <section className="w-[90%] sm:w-full mx-auto max-w-2xl bg-white cursor-default transition-all duration-150 ease-linear border border-zinc-100 p-2 rounded-xl shadow-sm text-secondary">
         <div className="flex items-center justify-between">
           <Link href={"/"}>
             <Image
@@ -37,7 +37,7 @@ export default function Header() {
               className="rounded-full p-1"
             />
           </Link>
-          <h2 className="text-zinc-700">Obed Danquah</h2>
+          <h2 className="text-zinc-700 font-medium">Obed Danquah</h2>
           <div className="">
             <Button>
               <Github className="opacity-60" size={18} />

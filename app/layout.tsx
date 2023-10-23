@@ -111,7 +111,7 @@ export default function RootLayout({
         <Provider attribute="class" defaultTheme="light" enableSystem>
           <main className="bg-[#fafafa] text-primary">
             <Header />
-            <section className="min-h-screen mx-auto max-w-2xl">
+            <section className="min-h-screen mx-auto max-w-2xl px-3">
               {children}
             </section>
           </main>

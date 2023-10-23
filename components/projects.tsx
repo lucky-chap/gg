@@ -6,13 +6,13 @@ import { projects } from "@/lib/data";
 
 export default function Projects() {
   return (
-    <section className="grid grid-cols-10 mt-12">
-      <p className="span-2">Projects</p>
+    <section className="sm:grid grid-cols-10 mt-12">
+      <p className="span-2 mt-1 text-zinc-950 mb-5 sm:mb-0">Projects</p>
       <div className="col-start-3 col-span-full text-zinc-500 font-normal">
         {projects.map((p, i) => (
           <div key={p.name} className="mb-10">
             <div className="flex justify-between items-center pb-4">
-              <p className="text-zinc-900">{p.name}</p>
+              <p className="text-[#676767] font-medium">{p.name}</p>
               <div className="flex items-center">
                 {p.live && (
                   <a
@@ -49,7 +49,7 @@ export default function Projects() {
               </div>
             </div>
             <p className="pb-4">{p.description} </p>
-            <div className="pb-4 flex items-center">
+            <div className="pb-4 flex items-center flex-wrap">
               {p.tags.map((t, i) => (
                 <Pill key={i}>{t}</Pill>
               ))}
@@ -58,7 +58,7 @@ export default function Projects() {
         ))}
 
         <Button>
-          <div className="flex items-center justify-center px-10 w-full font-medium">
+          <div className="flex items-center justify-center sm:px-10 w-full font-medium">
             <p className="text-[#676767]">See more on GitHub</p>
             <ExternalLink
               className="opacity-60 ml-2"

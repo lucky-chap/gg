@@ -11,7 +11,7 @@ import {
   Linkedin,
   Github,
   Twitter,
-  Phone,
+  Mail,
 } from "lucide-react";
 
 import yeshua from "@/public/images/me.jpg";
@@ -50,7 +50,7 @@ export default function Home() {
         </p>
 
         {/* twitter and phone */}
-        <div className="flex items-center font-medium my-2">
+        <div className="flex flex-col sm:flex-row sm:items-center font-medium my-2">
           <div className="flex items-center">
             <Twitter className="opacity-60" size={19} strokeWidth={2.1} />
             <p className="text-[#676767] pl-2">
@@ -63,9 +63,25 @@ export default function Home() {
               </a>
             </p>
           </div>
-          <div className="mx-1"></div> · <div className="mx-1"></div>
-          <div className="flex items-center">
-            {/* <Phone className="opacity-60" size={19} strokeWidth={2.1} /> */}
+
+          <div className="w-7"></div>
+
+          <div className="flex items-center mt-1 sm:mt-0">
+            <Mail className="opacity-60" size={19} strokeWidth={2.1} />
+            <p className="text-[#676767] pl-2">
+              <a
+                href="mailto:hunchodotdev@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                @hunchodotdev
+              </a>
+            </p>
+          </div>
+
+          <div className="w-7"></div>
+
+          <div className="flex items-center mt-1 sm:mt-0">
             <Discord />
             <p className="text-[#676767] pl-2">
               <a
@@ -80,11 +96,12 @@ export default function Home() {
         </div>
         {/* ----------- */}
 
-        <div className="flex items-center max-w-sm w-full justify-between mt-2">
+        <div className="hidden sm:flex sm:items-center max-w-sm w-full justify-between mt-2">
           <a
             href={"https://www.linkedin.com/in/obed-danquah-67782028b/"}
             target="_blank"
             rel="noreferrer"
+            className="hidden"
           >
             <Button>
               {/* <Upload className="opacity-60" size={18} /> */}
@@ -105,6 +122,7 @@ export default function Home() {
             href={"https://github.com/lucky-chap"}
             target="_blank"
             rel="noreferrer"
+            className="hidden"
           >
             <Button>
               {/* <Bell className="opacity-60" size={18} /> */}
@@ -124,8 +142,8 @@ export default function Home() {
       </section>
 
       {/* About */}
-      <section className="grid grid-cols-10 mt-12">
-        <p className="span-2">About</p>
+      <section className="sm:grid grid-cols-10 mt-12">
+        <p className="span-2 text-zinc-950 mb-5 sm:mb-0">About</p>
         <div className="col-start-3 col-span-full text-zinc-500 font-normal">
           <p className="pb-4">
             With over 2 years of experience in the field, I take pride in
