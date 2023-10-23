@@ -4,6 +4,7 @@
 
 body {
   background-color: #fafafa;
+  scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {

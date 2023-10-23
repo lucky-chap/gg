@@ -56,9 +56,9 @@ const inter = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Kaminari",
+  title: "Obed Danquah",
   generator: "Next.js",
-  applicationName: "Kaminari",
+  applicationName: "portfolio",
   referrer: "origin-when-cross-origin",
   keywords: [
     "Next.js",
@@ -68,7 +68,7 @@ export const metadata: Metadata = {
     "Template",
     "shadcn-ui",
   ],
-  authors: [{ name: "Virgil", url: "https://obedd.vercel.app" }],
+  authors: [{ name: "Virgil", url: "https://huncho.vercel.app" }],
   colorScheme: "dark",
   creator: "Virgil",
   publisher: "Virgil",
@@ -78,23 +78,18 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://kaminari.vercel.app"),
+  metadataBase: new URL("https://huncho.vercel.app"),
   openGraph: {
-    title: "Kaminari",
-    description: "Next.js, TailwindCSS and shadcn-ui Starter Template",
-    url: "https://kaminari.vercel.app",
-    siteName: "Kaminari",
+    title: "Huncho",
+    description: "My ever-evolving digital garden",
+    url: "https://huncho.vercel.app",
+    siteName: "huncho",
     images: [
       {
-        url: "https://kaminari.vercel.app/og.png",
+        url: "https://huncho.vercel.app/og.png",
         width: 800,
         height: 600,
-      },
-      {
-        url: "https://kaminari.vercel.app/og-dark.png",
-        width: 1800,
-        height: 1600,
-        alt: "Next.js, TailwindCSS and shadcn-ui Starter Template",
+        alt: "My ever-evolving digital garden",
       },
     ],
     locale: "en-US",

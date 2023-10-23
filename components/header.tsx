@@ -3,9 +3,10 @@
 import Image from "next/image";
 import { useState, useEffect } from "react";
 
-import demo from "@/public/images/demo.png";
-import { Bell } from "lucide-react";
+import me from "@/public/images/me.jpg";
+import { Bell, Github } from "lucide-react";
 import Button from "./ui/button";
+import Link from "next/link";
 
 export default function Header() {
   const [top, setTop] = useState<boolean>(true);
@@ -27,17 +28,19 @@ export default function Header() {
     >
       <section className="w-full mx-auto max-w-2xl bg-white cursor-default transition-all duration-150 ease-linear border border-zinc-100 p-2 rounded-xl shadow-sm text-secondary">
         <div className="flex items-center justify-between">
-          <Image
-            src={demo}
-            alt="User"
-            width={44}
-            height={44}
-            className="rounded-full p-1"
-          />
+          <Link href={"/"}>
+            <Image
+              src={me}
+              alt="User"
+              width={44}
+              height={44}
+              className="rounded-full p-1"
+            />
+          </Link>
           <h2 className="text-zinc-700">Obed Danquah</h2>
           <div className="">
             <Button>
-              <Bell className="opacity-60" size={18} />
+              <Github className="opacity-60" size={18} />
             </Button>
           </div>
         </div>

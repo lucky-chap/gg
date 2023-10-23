@@ -1,13 +1,25 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useState } from "react";
-import { Upload, Bell, Copy, CheckCircle, Check } from "lucide-react";
+import { useState } from "react";
+import {
+  Upload,
+  Bell,
+  Copy,
+  CheckCircle,
+  Check,
+  Linkedin,
+  Github,
+  Twitter,
+  Phone,
+} from "lucide-react";
 
-import yeshua from "@/public/images/demo.png";
+import yeshua from "@/public/images/me.jpg";
 import Button from "@/components/ui/button";
 import Experience from "@/components/experience";
 import Projects from "@/components/projects";
+import Footer from "@/components/footer";
+import Discord from "@/components/discord";
 
 export default function Home() {
   const email = "hunchodotdev@gmail.com";
@@ -15,7 +27,6 @@ export default function Home() {
   function handleCopy() {
     navigator.clipboard.writeText(email);
     setCopied(true);
-    console.log("works");
     setTimeout(() => {
       setCopied(false);
     }, 2500);
@@ -26,8 +37,8 @@ export default function Home() {
         <Image
           src={yeshua}
           alt="User"
-          width={44}
-          height={44}
+          width={55}
+          height={55}
           className="rounded-full"
         />
 
@@ -37,10 +48,49 @@ export default function Home() {
           Hi! Obed here. I am a visionary web developer with a passion for
           turning ideas into captivating digital experiences.
         </p>
+
+        {/* twitter and phone */}
+        <div className="flex items-center font-medium my-2">
+          <div className="flex items-center">
+            <Twitter className="opacity-60" size={19} strokeWidth={2.1} />
+            <p className="text-[#676767] pl-2">
+              <a
+                href="https://x.com/hunchodotdev"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                @hunchodotdev
+              </a>
+            </p>
+          </div>
+          <div className="mx-1"></div> · <div className="mx-1"></div>
+          <div className="flex items-center">
+            {/* <Phone className="opacity-60" size={19} strokeWidth={2.1} /> */}
+            <Discord />
+            <p className="text-[#676767] pl-2">
+              <a
+                href="https://discord.com/users/22assisi"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                22assisi
+              </a>
+            </p>
+          </div>
+        </div>
+        {/* ----------- */}
+
         <div className="flex items-center max-w-sm w-full justify-between mt-2">
-          <Button>
-            <Upload className="opacity-60" size={18} />
-          </Button>
+          <a
+            href={"https://www.linkedin.com/in/obed-danquah-67782028b/"}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Button>
+              {/* <Upload className="opacity-60" size={18} /> */}
+              <Linkedin className="opacity-60" size={18} />
+            </Button>
+          </a>
           <div className="mx-2"></div>
           <Button onClick={() => handleCopy()}>
             <div className="flex items-center font-medium">
@@ -51,9 +101,16 @@ export default function Home() {
             </div>
           </Button>
           <div className="mx-2"></div>
-          <Button>
-            <Bell className="opacity-60" size={18} />
-          </Button>
+          <a
+            href={"https://github.com/lucky-chap"}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Button>
+              {/* <Bell className="opacity-60" size={18} /> */}
+              <Github className="opacity-60" size={18} />
+            </Button>
+          </a>
         </div>
 
         <p
@@ -86,6 +143,8 @@ export default function Home() {
       <Experience />
 
       <Projects />
+
+      <Footer />
     </div>
   );
 }
