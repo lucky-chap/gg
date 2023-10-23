@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  background-color: #fafafa;
+}
+
+::-webkit-scrollbar {
+  background-color: rgb(251, 252, 252);
+}
+
 ::-moz-selection {
   color: #000;
   background: #99f6e4;

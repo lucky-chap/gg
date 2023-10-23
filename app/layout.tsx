@@ -3,6 +3,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 
 import localFont from "next/font/local";
+import Header from "@/components/header";
 
 const inter = localFont({
   src: [
@@ -114,7 +115,8 @@ export default function RootLayout({
       <body className={`${inter.className}`}>
         <Provider attribute="class" defaultTheme="light" enableSystem>
           <main className="bg-[#fafafa] text-primary">
-            <section className="min-h-screen mx-auto max-w-3xl">
+            <Header />
+            <section className="min-h-screen mx-auto max-w-2xl">
               {children}
             </section>
           </main>
