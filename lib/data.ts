@@ -30,7 +30,7 @@ export const projects: IProject[] = [
 export const experience: IExperience[] = [
   {
     company: "The Baidens Foundation",
-    date: "Nov 2021 - July 2023",
+    date: "Aug 2021 - Oct 2023",
     achievements: [
       "Created an elegant portfolio website featuring image galleries and interactive elements, custom-tailored for a married couple and their     foundation to showcase their work.",
       "Created a unique and custom design that perfectly represented the couple's and their foundation's vision and values.",

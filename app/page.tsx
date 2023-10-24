@@ -12,6 +12,7 @@ import {
   Github,
   Twitter,
   Mail,
+  ExternalLink,
 } from "lucide-react";
 
 import yeshua from "@/public/images/me.jpg";
@@ -49,9 +50,9 @@ export default function Home() {
           turning ideas into captivating digital experiences.
         </p>
 
-        {/* twitter and phone */}
+        {/* twitter and discord */}
         <div className="flex flex-col sm:flex-row sm:items-center font-medium my-2">
-          <div className="sm:hidden flex items-center">
+          <div className="flex items-center">
             <Twitter className="opacity-60" size={19} strokeWidth={2.1} />
             <p className="text-[#676767] pl-2">
               <a
@@ -64,7 +65,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="w-7"></div>
+          {/* <div className="w-7"></div>
 
           <div className="flex items-center mt-1 sm:mt-0">
             <Mail className="opacity-60" size={19} strokeWidth={2.1} />
@@ -77,7 +78,7 @@ export default function Home() {
                 @hunchodotdev
               </a>
             </p>
-          </div>
+          </div> */}
 
           <div className="w-7"></div>
 
@@ -96,7 +97,7 @@ export default function Home() {
         </div>
         {/* ----------- */}
 
-        <div className="hidden sm:flex sm:items-center max-w-sm w-full justify-between mt-2">
+        <div className="flex sm:items-center w-full justify-between mt-2">
           <a
             href={"https://www.linkedin.com/in/obed-danquah-67782028b/"}
             target="_blank"
@@ -108,16 +109,23 @@ export default function Home() {
               <Linkedin className="opacity-60" size={18} />
             </Button>
           </a>
-          <div className="mx-2"></div>
-          <Button onClick={() => handleCopy()}>
-            <div className="flex items-center font-medium">
-              <div className="flex items-center w-full px-10">
-                <p className="text-[#676767]">{email}</p>
-                <Copy className="opacity-60 ml-2" strokeWidth={2.3} size={18} />
+          <div className="sm:mx-2"></div>
+          <div className="sm:max-w-2xl -ml-3 sm:-ml-0">
+            <Button onClick={() => handleCopy()}>
+              <div className="flex items-center font-medium">
+                <div className="flex items-center w-full px-5 sm:px-10">
+                  <p className="text-[#676767]">{email}</p>
+                  <Copy
+                    className="opacity-60 ml-2"
+                    strokeWidth={2.3}
+                    size={18}
+                  />
+                </div>
               </div>
-            </div>
-          </Button>
-          <div className="mx-2"></div>
+            </Button>
+          </div>
+
+          <div className="sm:mx-2"></div>
           <a
             href={"https://github.com/lucky-chap"}
             target="_blank"
