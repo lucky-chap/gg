@@ -53,4 +53,12 @@ export const experience: IExperience[] = [
       "I managed projects from concept to completion, collaborating closely with clients to understand their requirements and delivering tailored solutions.",
     ],
   },
+  {
+    company: "Freelance",
+    date: "March 2020 - Sep 2020",
+    achievements: [
+      "Designed and developed a modern, responsive, and user-friendly website for a local school, enhancing its online presence and accessibility.",
+      "Provided training to school staff on using the website and offered ongoing technical support for any issues or updates.",
+    ],
+  },
 ];
