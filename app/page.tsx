@@ -52,7 +52,7 @@ export default function Home() {
 
         {/* resume, twitter and discord */}
 
-        <div className="flex flex-col sm:flex-row sm:items-center font-medium my-2">
+        <div className="flex flex-wrap flex-row sm:items-center font-medium my-2">
           <div className="flex items-center sm:mt-0 font-medium mr-3">
             <FileDown className="opacity-60" size={19} strokeWidth={2.1} />
             <p className="text-[#676767] pl-1">
@@ -67,7 +67,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="flex items-center">
+          <div className="flex items-center mr-3">
             <Twitter className="opacity-60" size={19} strokeWidth={2.1} />
             <p className="text-[#676767] pl-1">
               <a
@@ -80,7 +80,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="flex items-center ml-3 mt-1 sm:mt-0">
+          <div className="flex items-center mt-1 sm:mt-0">
             <Discord />
             <p className="text-[#676767] pl-1">
               <a

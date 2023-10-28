@@ -57,16 +57,22 @@ export default function Projects() {
           </div>
         ))}
 
-        <Button>
-          <div className="flex items-center justify-center sm:px-10 w-full font-medium">
-            <p className="text-[#676767]">See more on GitHub</p>
-            <ExternalLink
-              className="opacity-60 ml-2"
-              strokeWidth={2.3}
-              size={18}
-            />
-          </div>
-        </Button>
+        <a
+          href="https://github.com/lucky-chap"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Button>
+            <div className="flex items-center justify-center sm:px-10 w-full font-medium">
+              <p className="text-[#676767]">See more on GitHub</p>
+              <ExternalLink
+                className="opacity-60 ml-2"
+                strokeWidth={2.3}
+                size={18}
+              />
+            </div>
+          </Button>
+        </a>
       </div>
     </section>
   );
