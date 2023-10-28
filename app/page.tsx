@@ -11,7 +11,7 @@ import {
   Linkedin,
   Github,
   Twitter,
-  Mail,
+  FileDown,
   ExternalLink,
 } from "lucide-react";
 
@@ -45,16 +45,31 @@ export default function Home() {
 
         <h2 className="text-2xl text-secondary py-2">Obed Danquah</h2>
         <p className="pb-2">Frontend Developer · Mystic · he/him</p>
-        <p className="max-w-xl text-center pb-2">
+        <p className="max-w-xl text-center pb-3">
           Hi! Obed here. I am a visionary web developer with a passion for
           turning ideas into captivating digital experiences.
         </p>
 
-        {/* twitter and discord */}
+        {/* resume, twitter and discord */}
+
         <div className="flex flex-col sm:flex-row sm:items-center font-medium my-2">
+          <div className="flex items-center sm:mt-0 font-medium mr-3">
+            <FileDown className="opacity-60" size={19} strokeWidth={2.1} />
+            <p className="text-[#676767] pl-1">
+              <a
+                href="/huncho.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                download={true}
+              >
+                resume
+              </a>
+            </p>
+          </div>
+
           <div className="flex items-center">
             <Twitter className="opacity-60" size={19} strokeWidth={2.1} />
-            <p className="text-[#676767] pl-2">
+            <p className="text-[#676767] pl-1">
               <a
                 href="https://x.com/hunchodotdev"
                 target="_blank"
@@ -65,26 +80,9 @@ export default function Home() {
             </p>
           </div>
 
-          {/* <div className="w-7"></div>
-
-          <div className="flex items-center mt-1 sm:mt-0">
-            <Mail className="opacity-60" size={19} strokeWidth={2.1} />
-            <p className="text-[#676767] pl-2">
-              <a
-                href="mailto:hunchodotdev@gmail.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                @hunchodotdev
-              </a>
-            </p>
-          </div> */}
-
-          <div className="w-7"></div>
-
-          <div className="flex items-center mt-1 sm:mt-0">
+          <div className="flex items-center ml-3 mt-1 sm:mt-0">
             <Discord />
-            <p className="text-[#676767] pl-2">
+            <p className="text-[#676767] pl-1">
               <a
                 href="https://discord.com/users/22assisi"
                 target="_blank"
