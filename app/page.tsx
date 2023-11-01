@@ -23,7 +23,7 @@ import Footer from "@/components/footer";
 import Discord from "@/components/discord";
 
 export default function Home() {
-  const email = "hunchodotdev@gmail.com";
+  const email = "syntaxpriest@gmail.com";
   const [copied, setCopied] = useState(false);
   function handleCopy() {
     navigator.clipboard.writeText(email);
