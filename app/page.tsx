@@ -152,7 +152,7 @@ export default function Home() {
         <p className="span-2 text-zinc-950 mb-5 sm:mb-0">About</p>
         <div className="col-start-3 col-span-full text-zinc-500 font-normal">
           <p className="pb-4">
-            With over 2 years of experience in the field, I take pride in
+            With over 3 years of experience in the field, I take pride in
             delivering visually stunning and user-centric products that exceed
             client expectations.
           </p>
