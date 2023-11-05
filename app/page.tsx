@@ -57,7 +57,7 @@ export default function Home() {
             <FileDown className="opacity-60" size={19} strokeWidth={2.1} />
             <p className="text-[#676767] pl-1">
               <a
-                href="/huncho.pdf"
+                href="/geist.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 download={true}
