@@ -44,10 +44,10 @@ export default function Home() {
         />
 
         <h2 className="text-2xl text-secondary py-2">Obed Danquah</h2>
-        <p className="pb-2">Frontend Developer · Mystic · he/him</p>
+        <p className="pb-2">Fullstack Developer · Mystic · he/him</p>
         <p className="max-w-xl text-center pb-3">
-          Hi! Obed here. I am a visionary web developer with a passion for
-          turning ideas into captivating digital experiences.
+          Hi! Obed here. I am a visionary fullstack web developer with a passion
+          for turning ideas into captivating digital experiences.
         </p>
 
         {/* resume, twitter and discord */}
