@@ -3,9 +3,6 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
-  images: {
-    domains: ["*"],
-  },
 };
 
 module.exports = nextConfig;
