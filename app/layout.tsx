@@ -69,7 +69,6 @@ export const metadata: Metadata = {
     "shadcn-ui",
   ],
   authors: [{ name: "Virgil", url: "https://huncho.vercel.app" }],
-  colorScheme: "dark",
   creator: "Virgil",
   publisher: "Virgil",
   alternates: {},
